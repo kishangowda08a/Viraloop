@@ -1,8 +1,11 @@
 import axios from "axios";
 
+const API_URL =
+  "https://viraloop-backend.onrender.com/api/contact";
+
 export const sendMessage = async (data) => {
   const response = await axios.post(
-    "https://viraloop-backend.onrender.com",
+    API_URL,
     data
   );
 
@@ -11,7 +14,7 @@ export const sendMessage = async (data) => {
 
 export const getContacts = async () => {
   const response = await axios.get(
-    "https://viraloop-backend.onrender.com"
+    API_URL
   );
 
   return response.data;

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "https://viraloop-backend.onrender.com";
+  "https://viraloop-backend.onrender.com/api/services";
 
 export const getServices =
   async () => {
