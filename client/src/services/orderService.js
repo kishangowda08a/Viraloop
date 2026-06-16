@@ -27,7 +27,7 @@ export const updateOrderStatus =
   async (id, status) => {
     const response =
       await axios.put(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://viraloop-backend.onrender.com`,
         { status }
       );
 
@@ -38,7 +38,7 @@ export const updateOrderStatus =
   async (email) => {
     const response =
       await axios.get(
-        `http://localhost:5000/api/orders/user/${email}`
+        `https://viraloop-backend.onrender.com`
       );
 
     return response.data;

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://localhost:5000/api/videos";
+  "https://viraloop-backend.onrender.com";
 
 // Get all videos
 export const getVideos = async () => {

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://localhost:5000/api/upload";
+  "https://viraloop-backend.onrender.com";
 
 export const uploadFile = async (file) => {
   const formData = new FormData();
